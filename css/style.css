@@ -1,0 +1,658 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *::before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+.learning .learning-container h1, .advantages-container h2, .video-container h2, .courses-container h2, .courses-container h3, .testimonials-container h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 80px;
+  color: #3D3D3D;
+}
+
+.learning .learning-container p, .advantages-container h3, .video-container p, .courses-container .courses-types__adult p, .courses-container .courses-types__children p, .courses-container .courses-types__training p, .courses-container .language-container .language-item p, .testimonials-container .carousel-container .carousel-slide__item .content, footer .footer {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 37px;
+  color: #3D3D3D;
+}
+
+.learning .learning-container .learning_btn, .courses-container .btn, .testimonials-container .btn-container .btn {
+  background: #6059F7;
+  border-radius: 200px;
+}
+
+body {
+  margin: 0 auto;
+}
+
+button:focus {
+  outline: none;
+}
+
+.container {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+.header {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .logo {
+  width: 69.91px;
+  height: 74.79px;
+  padding-left: 80px;
+  padding-bottom: 12px;
+}
+
+.header .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-right: 80px;
+}
+
+.header .nav a:hover::after {
+  content: '';
+  opacity: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin-top: 5px;
+}
+
+.header .nav li {
+  margin-left: 50px;
+}
+
+.header .nav li a {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 110%;
+  color: #3D3D3D;
+}
+
+.header .nav li a.nav__item_blue {
+  font-weight: 700;
+  color: #36C3FE;
+}
+
+.learning {
+  height: 768px;
+  background-image: url("../img/learning_bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.learning .learning-container {
+  padding-left: 80px;
+  padding-top: 126px;
+}
+
+.learning .learning-container p {
+  padding-top: 60px;
+}
+
+.learning .learning-container .learning_btn {
+  position: relative;
+  width: 175px;
+  height: 60px;
+  top: 60px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 110%;
+  color: #FFFFFF;
+}
+
+.learning .learning-container span {
+  position: absolute;
+  left: 31px;
+  top: 20px;
+}
+
+.learning .learning-container span img {
+  position: relative;
+  top: 4px;
+  left: 10px;
+}
+
+.advantages-container {
+  background-image: url(../img/advantages_bg.svg);
+  background-size: contain;
+  width: 1258.38px;
+  height: 740.7px;
+  position: relative;
+  left: 3.93%;
+  right: 3.95%;
+  top: 1.74%;
+  bottom: 1.81%;
+}
+
+.advantages-container h2 {
+  padding-left: 26.38px;
+  padding-top: 36.6px;
+}
+
+.advantages-container h3 {
+  font-weight: 700;
+}
+
+.advantages-container .advantages__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: relative;
+  width: 750px;
+}
+
+.advantages-container .one {
+  left: 126.38px;
+  top: 95px;
+}
+
+.advantages-container .one h3 {
+  position: absolute;
+  left: 85px;
+}
+
+.advantages-container .two {
+  left: 737px;
+  bottom: 191px;
+}
+
+.advantages-container .two h3 {
+  position: absolute;
+  left: 85px;
+}
+
+.advantages-container .three {
+  left: 558.38px;
+  bottom: 108.1px;
+}
+
+.advantages-container .three h3 {
+  position: absolute;
+  left: 85px;
+}
+
+.advantages-container .four {
+  left: 334px;
+  bottom: 61px;
+}
+
+.advantages-container .four h3 {
+  position: absolute;
+  left: 85px;
+}
+
+.video-container {
+  max-width: 1206px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.video-container h2 {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+.video-container p {
+  text-align: center;
+}
+
+.video-container video {
+  margin: 40px 0px 60px;
+}
+
+.courses-container {
+  position: relative;
+}
+
+.courses-container h2 {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.courses-container h3 {
+  font-size: 56px;
+  line-height: 68px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.courses-container .courses-types {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+}
+
+.courses-container .courses-types__adult {
+  height: 257px;
+  width: 33.3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #6059F7;
+}
+
+.courses-container .courses-types__adult p {
+  font-weight: bold;
+  color: #FFFFFF;
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+
+.courses-container .courses-types__adult img {
+  border-radius: 50%;
+}
+
+.courses-container .courses-types__children {
+  height: 257px;
+  width: 33.3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #6592FE;
+}
+
+.courses-container .courses-types__children p {
+  font-weight: bold;
+  color: #FFFFFF;
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+
+.courses-container .courses-types__children img {
+  border-radius: 50%;
+}
+
+.courses-container .courses-types__training {
+  height: 257px;
+  width: 33.4%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #8C61FF;
+}
+
+.courses-container .courses-types__training p {
+  font-weight: bold;
+  color: #FFFFFF;
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+
+.courses-container .courses-types__training img {
+  border-radius: 50%;
+}
+
+.courses-container .language-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  height: 161px;
+  border-bottom: 1px solid #ADABAB;
+}
+
+.courses-container .language-container a:hover p {
+  color: #36C3FE;
+}
+
+.courses-container .language-container a:hover::after {
+  content: '';
+  opacity: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin-top: 5px;
+}
+
+.courses-container .language-container .language-item {
+  width: 172px;
+  margin: 0;
+}
+
+.courses-container .language-container .language-item p {
+  margin-top: 24px;
+}
+
+.courses-container .language-container .language-item__rus {
+  margin-left: 80px;
+}
+
+.courses-container .language-container .language-item__fr {
+  margin-right: 80px;
+}
+
+.courses-container .btn {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 19.8px;
+  color: white;
+  width: 221px;
+  height: 60px;
+}
+
+.courses-container .btn-container {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 50px;
+}
+
+.courses-container .courses-btn {
+  margin-left: 28px;
+}
+
+.courses-container .courses-btn__gray {
+  background: #ADABAB;
+}
+
+.testimonials-container {
+  background-image: url(../img/testimonials/background-img.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 669px;
+}
+
+.testimonials-container .carousel-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.testimonials-container .carousel-container a {
+  cursor: pointer;
+}
+
+.testimonials-container .carousel-container .prev:hover path, .testimonials-container .carousel-container .next:hover path {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  stroke: #8C61FF;
+}
+
+.testimonials-container .carousel-container .carousel-slide__item {
+  width: 915px;
+  height: 311px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 40px 50px 77px 40px;
+}
+
+.testimonials-container .carousel-container .carousel-slide__item img {
+  margin-right: 46px;
+}
+
+.testimonials-container .carousel-container .carousel-slide__item .content {
+  font-size: 24px;
+  line-height: 26.4px;
+}
+
+.testimonials-container .carousel-container .carousel-slide__item .content h4 {
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.testimonials-container .carousel-container .carousel-slide__item .content p {
+  font-weight: 400;
+}
+
+.testimonials-container .carousel-container .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.testimonials-container .carousel-dot {
+  text-align: center;
+}
+
+.testimonials-container .carousel-dot .dot {
+  width: 13px;
+  height: 13px;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  margin-right: 40px;
+  margin-top: 55.8px;
+  display: inline-block;
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+}
+
+.testimonials-container .carousel-dot .active, .testimonials-container .carousel-dot .dot:hover {
+  background-color: #8C61FF;
+}
+
+.testimonials-container .btn-container {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 50px;
+}
+
+.testimonials-container .btn-container .btn {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 19.8px;
+  color: white;
+  width: 221px;
+  height: 60px;
+  margin-right: 80px;
+}
+
+.testimonials-container h2 {
+  margin-left: 82px;
+  padding-bottom: 50px;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+footer {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .footer {
+  font-size: 18px;
+  line-height: 19.8px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 700px;
+}
+
+footer .footer .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 150px;
+}
+
+footer .footer .social li {
+  margin-left: 40px;
+}
+/*# sourceMappingURL=style.css.map */

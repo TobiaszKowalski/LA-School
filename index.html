@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LA School</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Сперва попытался немного в БЭМ, но потом все равно все пошло не по плану (блокам установил внешние отступы и все такое) -->
+    <header>
+        <div class="header">
+            <a href="" class="logo">
+                <img src="img/logo.svg" alt=""> 
+            </a>
+        <nav>
+            <ul class="nav">
+                 <li><a href="" class="nav__item">Language friends</a></li>
+                 <li><a href="" class="nav__item">Working together</a></li>
+                 <li><a href="" class="nav__item">Forum</a></li>
+                 <li><a href="" class="nav__item">The blog</a></li>
+                 <li><a href="" class="nav__item">Learn</a></li>
+                 <li><a href="" class="nav__item_blue">Join now</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <section class="learning">
+        <div class="container">
+            <div class="learning-container">
+                <h1 class="learning__title title">Learning with<br> us is easy!<br>Let's try it!</h1>
+                <p>Choose your course, register and<br> do not miss the news!</p>
+                <button class="btn learning_btn"><span>Join now <img src="img\btn_element.svg"></span></button>
+            </div>
+        </div>
+    </section>
+    <section class="advantages">
+        <div class="container">
+            <div class="advantages-container">
+                <div>
+                    <h2 class="title">Advantages</h2>
+                </div>
+                <div class="advantages__item one">
+                    <img src="img/adv_icon.svg">
+                    <h3>Many languages</h3>
+                </div>
+                <div class="advantages__item two">
+                    <img src="img/adv_icon.svg">
+                    <h3>Online learning </h3>
+                </div>
+                <div class="advantages__item three">
+                    <img src="img/adv_icon.svg">
+                    <h3>Various course options</h3>
+                </div>
+                <div class="advantages__item four">
+                    <img src="img/adv_icon.svg">
+                    <h3>You can do it from anywhere in the world</h3>
+                </div>
+                </div>
+    </section>
+    <section class="video">
+        <div class="container">
+            <div class="video-container">
+                <h2>Video about our school</h2>
+                <p>The video tells about the stages of training, modules, teachers and much more. Watch it soon!</p>
+                <!-- Надо бы в iframe обернуть по правильному, но чтобы походило на макет пока так -->
+                <video controls width="1206px" height="424px" poster="img\video_img.png">
+                    <source src="#" type="video/mp4">
+                    <source src="#" type="video/webm">">
+                    <source src="#" type="video/ogg">
+                </video>
+            </div>
+        </div>
+    </section>
+    <section class="courses">
+        <div class="container">
+            <div class="courses-container">
+                <h2>Choose the right course</h2>
+                <div class="courses-types">
+                    <a class="courses-types__adult" href="#">
+                        <p>Adult course</p>
+                        <img src="img/courses/adult.png" alt="">
+                    </a>
+                    <a class="courses-types__children" href="#">
+                        <p>Course for children</p>
+                        <img src="img/courses/children.png" alt="">
+                    </a>
+                    <a class="courses-types__training" href="#">
+                        <p>Corporate training</p>
+                        <img src="img/courses/corporate.png" alt="">
+                    </a>
+                </div>
+                <h3>Choose a language</h3>
+                <div class="language-container">
+                    <a href="#">
+                        <div class="language-item language-item__rus">
+                            <img src="./img/courses/lang/rus.svg" alt="">
+                            <p>Russian</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="language-item language-item__pl">
+                            <img src="./img/courses/lang/pl.svg" alt="">
+                            <p>Polish</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="language-item language-item__gb">
+                            <img src="./img/courses/lang/GBen.svg" alt="">
+                            <p>English</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="language-item language-item__it">
+                            <img src="./img/courses/lang/it.svg" alt="">
+                            <p>Italian</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="language-item language-item__sp">
+                            <img src="./img/courses/lang/esp.svg" alt="">
+                            <p>Spanish</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="language-item language-item__de">
+                            <img src="./img/courses/lang/de.svg" alt="">
+                            <p>Germany</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="language-item language-item__fr">
+                            <img src="./img/courses/lang/fr.svg" alt="">
+                            <p>French</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="btn-container">
+                    <button class="btn courses-btn__gray">Take the test</button>
+                    <button class="btn courses-btn">Enroll in a course</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials">
+        <div class="container">
+            <div class="testimonials-container">
+                <h2>Testimonials</h2>
+                <div class="carousel-container">
+                    <a class="prev" onclick='changeSlides(-1)'>
+                        <svg width="27" height="69" viewBox="0 0 27 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M25.375 67.75L1.625 34.5L25.375 1.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <div class="carousel-slide fade">
+                        <div class="carousel-slide__item">
+                            <img src="img/testimonials/avatar.svg" alt="">
+                            <div class="content">
+                                <h4 class="name">Ivan Cortes</h4>
+                                <p class="text">I like “La” for now. It´s soon but I hope it help me <wbr> to learn a lot of English. In the future, I hope I can <wbr> chat with other native with this app. I think this is <wbr> missing in bussu and it could be important to improve.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="next" onclick='changeSlides(1)'>
+                        <svg width="27" height="69" viewBox="0 0 27 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.62499 1.25L25.375 34.5L1.625 67.75" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                            
+                    </a>
+                </div>
+                <div class="carousel-dot">
+                    <span class="dot active" onclick=""></span>
+                    <span class="dot" onclick=""></span>
+                    <span class="dot" onclick=""></span>
+                    <span class="dot" onclick=""></span>
+                    <span class="dot" onclick=""></span>
+                    <span class="dot" onclick=""></span>
+                </div>
+                <div class="btn-container">
+                    <button class="btn">Write of review</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <p>© 2020 Learn Language L/A. All rights reserved.</p>
+            <ul class="social">
+                <li>
+                    <a href="#" target="_blank">
+                        <img src="./img/footer/youtube-logo.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <img src="./img/footer/vk-logo.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <img src="./img/footer/facebook-logo.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <img src="./img/footer/twitter-logo.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
